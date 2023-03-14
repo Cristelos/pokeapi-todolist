@@ -73,11 +73,11 @@ header a {
   text-decoration: none;
   cursor: pointer;
   color: #000000;
-  font-weight: 600;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 header a:hover {
   color: #3563ad;
-  font-weight: 600;
   border-bottom: 3px solid #ffcb03;
 }
 
@@ -207,6 +207,7 @@ p.id {
   padding: 30px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   font-family: "Open Sans", sans-serif;
+  border-radius: 7px;
 }
 .container-todo h1 {
   text-align: center;
@@ -283,6 +284,9 @@ p.id {
 }
 .container-todo .empty {
   color: darkslategrey;
+}
+.container-todo .empty p {
+  text-align: center;
 }
 .container-todo ::-moz-placeholder {
   color: rgb(159, 158, 158);

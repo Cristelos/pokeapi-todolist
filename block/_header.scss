@@ -22,12 +22,12 @@ header {
         text-decoration: none;
         cursor: pointer;
         color: #000000;
-        font-weight: 600;
+        font-weight: 900;
+        text-transform: uppercase;
     }
 
     a:hover{
         color: #3563ad;
-        font-weight: 600;
         border-bottom: 3px solid #ffcb03;
     }
 }
