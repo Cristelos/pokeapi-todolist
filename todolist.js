@@ -19,21 +19,34 @@ const crearLista = (devuelve) => {
     //primero creamos una variable que nos dé el valor del input
     const crearTarea = input$$.value;
     if(crearTarea !== ""){
-        //creamos un elemento li
-        const nuevaLista$$ = document.createElement('li');
-        nuevaLista$$.innerText = crearTarea;
 
-        //creamos un botón para eliminar el punto de la lista
-        // const btnEliminar$$ = document.createElement('button');
-        // btnEliminar$$.innerText = 'X';
-        // btnEliminar$$.setAttribute('class','eliminar');
-        // nuevaLista$$.appendChild(btnEliminar$$);
-        lista$$.appendChild(nuevaLista$$);
+        //creamos un elemento li
+        const li$$ = document.createElement('li');
+        li$$.innerText = crearTarea;
+
+        //creamos el botón de eliminar
+        const btnElimina$$ = document.createElement('button');
+        btnElimina$$.innerText = 'X';
+        btnElimina$$.className = 'eliminar';
+        li$$.appendChild(btnElimina$$);
+
+        lista$$.appendChild(li$$);
 
         input$$.value ='';
-
+        
     }
 }
 
-btn$$.addEventListener('click',crearLista)
+function eliminar(){
+    const tarea = this.parentNode;
+    tarea.remove();
+}
+
+btn$$.addEventListener('click',crearLista);
+
+document.addEventListener('click', function(e){
+    if(e.target && e.target.className === 'eliminar'){
+        eliminar.call(e.target);
+    }
+});
 
