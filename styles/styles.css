@@ -69,14 +69,14 @@ header li {
 header li:visited {
   color: #3566af;
 }
-header a {
+header li a {
   text-decoration: none;
   cursor: pointer;
   color: #000000;
   font-weight: 900;
   text-transform: uppercase;
 }
-header a:hover {
+header li a:hover {
   color: #3563ad;
   border-bottom: 3px solid #ffcb03;
 }

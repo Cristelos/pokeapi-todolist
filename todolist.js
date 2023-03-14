@@ -28,12 +28,20 @@ const crearLista = (devuelve) => {
         //creamos el botón de eliminar
         const btnElimina$$ = document.createElement('button');
         btnElimina$$.innerText = 'X';
-        btnElimina$$.className = 'eliminar';
+
+        btnElimina$$.addEventListener('click', () =>{
+            const index = tareas.indexOf(p$$);
+            if(index !== -1){
+                tareas.splice(index,1);
+                lista$$.removeChild(li$$);
+            }
+        })
         
 
         li$$.appendChild(p$$);
         li$$.appendChild(btnElimina$$);
         lista$$.appendChild(li$$);
+        tareas.push(p$$);
 
         input$$.value ='';
         
@@ -45,11 +53,9 @@ function eliminar(){
     tarea.remove();
 }
 
-btn$$.addEventListener('click',crearLista);
-
-document.addEventListener('click', function(e){
-    if(e.target && e.target.className === 'eliminar'){
-        eliminar.call(e.target);
-    }
+btn$$.addEventListener('click',crearLista, () => {
+    div$$.innerHTML = '';
+    tareas.length = 0;
 });
+
 

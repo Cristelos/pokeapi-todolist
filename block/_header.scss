@@ -18,15 +18,14 @@ header {
         color: #3566af;
     }
 
-    a{
+    li a{
         text-decoration: none;
         cursor: pointer;
         color: #000000;
         font-weight: 900;
         text-transform: uppercase;
     }
-
-    a:hover{
+    li a:hover{
         color: #3563ad;
         border-bottom: 3px solid #ffcb03;
     }

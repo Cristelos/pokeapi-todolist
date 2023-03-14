@@ -33,6 +33,7 @@ const pintar = (datospokemon) => {
   
     const img$$ = document.createElement('img');
     img$$.setAttribute('src', datospokemon.sprites['front_default']);
+    // img$$.setAttribute('src', datospokemon.sprites.versions["generation-v"]["black-white"].animated.front_default);
     img$$.setAttribute('alt', datospokemon.name);
 
     const nombre$$ = document.createElement('h2');
