@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #00235B;
+    /* font-weight: 800; */
+    line-height: 0.0625;
+    letter-spacing: 1.3px;
+    font-size: 0.9rem;
+    margin-top: 34px;
+    margin-bottom: 22px;
+    font-family: "Press Start 2P", cursive;
+}
+
+ol#pokedex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+li div {
+    padding: 20px 15px 14px;
+    border-radius: 13px;
+    width: 156px;
+    display: flex;
+    flex-direction: column;
+    border: 6px solid #326bb2;
+    box-shadow: 0px 0px 17px 2px #aaaaaa;
+    filter: grayscale(1);
+    background-image: radial-gradient(circle at 46.39% 46.39%, #ffff41 0, #ffff29 25%, #f8d110 50%, #cfa000 75%, #a87600 100%);
+}
+
+li div:hover {
+    transform: translateY(-20px);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    filter: none;
+}
+
+div img {
+    border: 2px solid #606060;
+    background: url(../img/fondo-pokemones.png);
+    background-position-x: 656.3px;
+    background-size: 400px;
+}
+
+p{
+    font-weight: 500;
+    color: #414040;
+}
+
+p.tipo {
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+p.id {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
