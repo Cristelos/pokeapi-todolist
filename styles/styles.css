@@ -197,6 +197,106 @@ p.id {
   font-weight: 700;
 }
 
+.container-todo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", sans-serif;
+}
+.container-todo h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.container-todo .search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.container-todo form {
+  display: flex;
+}
+.container-todo input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+  border: 3px solid #000000;
+  border-radius: 5px 0 0 5px;
+}
+.container-todo .li-container {
+  background-color: white;
+  width: 100%;
+  color: darkslategray;
+  margin-top: 20px;
+}
+.container-todo ul {
+  padding: 0;
+}
+.container-todo li {
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+.container-todo li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+.container-todo .btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+.container-todo .btn-delete:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+.container-todo .btn-add {
+  padding: 5px 15px;
+  color: black;
+  font-family: fantasy;
+  background-color: #ff1b1c;
+  font-size: 1.4rem;
+  outline: none;
+  border: 3px solid #000000;
+  border-right-width: none;
+  border-radius: 0px 5px 5px 0px;
+}
+.container-todo .btn-add:hover {
+  cursor: pointer;
+  background-color: rgb(255, 203, 3);
+  color: #3069b2;
+}
+.container-todo .empty {
+  color: darkslategrey;
+}
+.container-todo ::-moz-placeholder {
+  color: rgb(159, 158, 158);
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif !important;
+  text-align: left;
+}
+.container-todo ::placeholder {
+  color: rgb(159, 158, 158);
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif !important;
+  text-align: left;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
