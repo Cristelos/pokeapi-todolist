@@ -240,20 +240,23 @@ p.id {
 }
 .container-todo li {
   list-style: none;
-  background-color: lightgray;
+  background-color: #e9e8e8;
   border-radius: 10px;
   margin-top: 15px;
   display: flex;
+  align-items: center;
+  font-weight: 600;
 }
 .container-todo li p {
   margin: 0;
-  padding: 15px;
+  padding: 8px;
   width: 100%;
+  padding-left: 25px;
 }
-.container-todo .btn-delete {
+.container-todo li > button {
   margin-left: auto;
   border: none;
-  background-color: #e31746;
+  background-color: #3366b0;
   color: white;
   font-weight: bold;
   padding: 5px 10px;
@@ -263,9 +266,9 @@ p.id {
   width: 10%;
   font-size: 1.2em;
 }
-.container-todo .btn-delete:hover {
+.container-todo li > button:hover {
   cursor: pointer;
-  background-color: lightseagreen;
+  background-color: #ffcb03;
 }
 .container-todo .btn-add {
   padding: 5px 15px;

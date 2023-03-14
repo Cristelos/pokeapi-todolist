@@ -22,14 +22,17 @@ const crearLista = (devuelve) => {
 
         //creamos un elemento li
         const li$$ = document.createElement('li');
-        li$$.innerText = crearTarea;
+        const p$$ =document.createElement('p');
+        p$$.innerText = crearTarea;
 
         //creamos el botón de eliminar
         const btnElimina$$ = document.createElement('button');
         btnElimina$$.innerText = 'X';
         btnElimina$$.className = 'eliminar';
-        li$$.appendChild(btnElimina$$);
+        
 
+        li$$.appendChild(p$$);
+        li$$.appendChild(btnElimina$$);
         lista$$.appendChild(li$$);
 
         input$$.value ='';
