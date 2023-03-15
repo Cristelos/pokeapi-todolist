@@ -1,8 +1,9 @@
 // Primero hay que recuperar los elementos que tenemos en nuestra página, input, botón, lista y el campo que queramos hacer desaparecer
 
 const input$$ = document.querySelector('input');
-const btn$$ = document.querySelector('.btn-add')
-const lista$$ = document.querySelector('.li-container')
+const btn$$ = document.querySelector('.btn-add');
+const lista$$ = document.querySelector('.li-container');
+const empty$$ = document.querySelector('.empty');
 
 //falta por seleccionar el elemento que vamos a borrar
 
@@ -22,6 +23,7 @@ const crearLista = (devuelve) => {
 
         //creamos un elemento li
         const li$$ = document.createElement('li');
+        li$$.className = 'tareas';
         const p$$ =document.createElement('p');
         p$$.innerText = crearTarea;
 
@@ -30,13 +32,21 @@ const crearLista = (devuelve) => {
         btnElimina$$.innerText = 'X';
 
         btnElimina$$.addEventListener('click', () =>{
+            const mili$$ = document.querySelectorAll('.tareas');
+            console.log(mili$$);
             const index = tareas.indexOf(p$$);
             if(index !== -1){
                 tareas.splice(index,1);
                 lista$$.removeChild(li$$);
             }
-        })
+             //eliminamos el texto de empty
         
+            if (mili$$.length === 1) {
+                empty$$.style.display = 'inline';
+            } else {
+                empty$$.style.display = 'none';
+            }
+        });
 
         li$$.appendChild(p$$);
         li$$.appendChild(btnElimina$$);
@@ -44,6 +54,14 @@ const crearLista = (devuelve) => {
         tareas.push(p$$);
 
         input$$.value ='';
+
+        //eliminamos el texto de empty
+        
+        // if (lista$$.length === 0) {
+        //     empty$$.style.display = 'inline';
+        // } else {
+            empty$$.style.display = 'none';
+        // }
         
     }
 }
