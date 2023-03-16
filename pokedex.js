@@ -26,6 +26,7 @@ const pintar = (datospokemon) => {
     const li$$ = document.createElement('li');
 
     const div$$ = document.createElement('div');
+    div$$.setAttribute('class','tarjeta');
 
     const idpokemon$$ = document.createElement('p');
     idpokemon$$.setAttribute('class','id');
@@ -36,8 +37,11 @@ const pintar = (datospokemon) => {
     // img$$.setAttribute('src', datospokemon.sprites.versions["generation-v"]["black-white"].animated.front_default);
     img$$.setAttribute('alt', datospokemon.name);
 
+    const divh2$$ = document.createElement('div');
+    divh2$$.setAttribute('class','cajah2')
     const nombre$$ = document.createElement('h2');
     nombre$$.textContent = datospokemon.name;
+
 
     const tipo$$ = document.createElement('p');
     tipo$$.setAttribute('class', 'tipo');
@@ -45,7 +49,8 @@ const pintar = (datospokemon) => {
 
     div$$.appendChild(idpokemon$$);
     div$$.appendChild(img$$);
-    div$$.appendChild(nombre$$);
+    div$$.appendChild(divh2$$);
+    divh2$$.appendChild(nombre$$);
     div$$.appendChild(tipo$$);
     li$$.appendChild(div$$);
     lista$$.appendChild(li$$);

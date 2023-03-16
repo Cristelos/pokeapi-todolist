@@ -135,12 +135,9 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #00235B;
-  /* font-weight: 800; */
   line-height: 0.0625;
   letter-spacing: 1.3px;
-  font-size: 0.9rem;
-  margin-top: 34px;
-  margin-bottom: 22px;
+  font-size: 0.8rem;
   font-family: "Press Start 2P", cursive;
 }
 
@@ -153,8 +150,8 @@ ol#pokedex {
   justify-content: center;
 }
 
-li div {
-  padding: 20px 15px 14px;
+.tarjeta {
+  padding: 10px 17px 10px;
   border-radius: 13px;
   width: 156px;
   display: flex;
@@ -165,7 +162,7 @@ li div {
   background-image: radial-gradient(circle at 46.39% 46.39%, #ffff41 0, #ffff29 25%, #f8d110 50%, #cfa000 75%, #a87600 100%);
 }
 
-li div:hover {
+.tarjeta:hover {
   transform: translateY(-20px);
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -187,8 +184,12 @@ p {
 p.tipo {
   margin-bottom: 7px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-transform: capitalize;
+  background-color: #ffffff;
+  padding: 21px 0px;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 p.id {
@@ -201,6 +202,13 @@ p.id {
   text-align: center;
   border-radius: 20px;
   border: 2px solid;
+}
+
+.cajah2 {
+  background-color: #efebeb;
+  margin: 18px 0 11px 0px;
+  padding: 13px 5px;
+  border: 1px solid #000000;
 }
 
 .container-todo {
